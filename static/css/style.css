@@ -40,14 +40,15 @@ main{
     position: fixed;
     color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     margin: 0;
     padding: 0.5rem 4rem;
-    border-bottom: 2px solid #444;
+    /* border-bottom: 2px solid #444; */
     /* background: linear-gradient(45deg, #111111, #111222, #222333, #222222, #333333); */
-    background-color: black;
-    backdrop-filter: blur(10px);
+    /* background-color: black; */
+    /* backdrop-filter: blur(10px); */
 }
 
 .nav_left{
@@ -56,10 +57,15 @@ main{
     align-items: center;
     font-size: 1.3rem;
     font-weight: 600;
+    padding: 1rem 1rem;
+    border-bottom: 2px solid #444;    
 }
 .nav_left a{
-    color: white;
-text-decoration: none;
+    /* color: white; */
+    text-decoration: none;
+    display: flex;
+    width: 85px;
+    height:85px;
 }
 .nav_right{
     display: flex;
