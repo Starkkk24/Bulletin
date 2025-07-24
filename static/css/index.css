@@ -23,7 +23,7 @@ hr{
 .page-wrap{
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    margin: 0.5rem;
+    gap: 3rem;  
 }
 
 .display{
