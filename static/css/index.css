@@ -29,6 +29,8 @@ time{
 .page-wrap {
   padding-top: 15rem;
   padding-bottom: 15rem;
+  justify-content: center;
+  align-items: center;
     display: flex;
     flex-direction: row;
 }
@@ -53,7 +55,8 @@ time{
 .hot-feed-content{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 1.25rem;
   padding: 0;
   margin: 0;
 }
@@ -173,7 +176,7 @@ time{
     padding: 0.5rem 0.5rem;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 0.75rem;
+    gap: 1.5rem;
   }
 
     .direct-head a{

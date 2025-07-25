@@ -40,7 +40,7 @@ main{
     top: 0;
     left: 0;
     right: 0;
-    height: 5rem;
+    /* height: 5rem; */
     /* width: 80vw; */
     position: fixed;
     color: white;
@@ -50,6 +50,31 @@ main{
     align-items: center;
     margin: 0;
     padding: 0.5rem 4rem;
+    background-color: rgba(0, 0, 0, 0); /* Start with transparent */
+    transition: background-color 0.3s ease;
+    /* border-bottom: 2px solid #444; */
+    /* background: linear-gradient(45deg, #111111, #111222, #222333, #222222, #333333); */
+    /* background-color: black; */
+    /* backdrop-filter: blur(10px); */
+}
+
+
+.nav-wrap{
+    top: 0;
+    left: 0;
+    right: 0;
+    /* height: 5rem; */
+    /* width: 80vw; */
+    position: fixed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0.5rem 4rem;
+    background-color: rgba(0, 0, 0, 0); /* Start with transparent */
+    transition: background-color 0.3s ease;
     /* border-bottom: 2px solid #444; */
     /* background: linear-gradient(45deg, #111111, #111222, #222333, #222222, #333333); */
     /* background-color: black; */
