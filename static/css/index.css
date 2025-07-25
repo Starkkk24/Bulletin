@@ -26,13 +26,12 @@ time{
 
 .page-wrap {
   padding-top: 15rem;
+  padding-bottom: 15rem;
 }
 
 .page-wrap{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    gap: 3rem;  
-    padding: 15rem 2rem;
+    display: flex;
+    flex-direction: row;
 }
 
 .section-1{
@@ -72,25 +71,26 @@ time{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .left-space{
   display: grid;
   gap: 0.5rem;
   padding: 0.5rem;
-  margin-bottom: 1rem;
 }
 
-.left-space h1{
+.left-space h1,p{
   margin: 0;
 }
-.day{
-  padding: 0.5rem;
-  border: 1px solid white;
+
+.day span{
+  font-weight: 600;
+  font-size: large;
+  padding: 1.5rem 2rem;
+  /* border: 2px solid white; */
   border-radius: 0.5rem;
-}
-.day h3,p{
-  margin: 0;
+  background: linear-gradient(45deg, #38362E, #807A5C, #DCD6C1);
 }
 
 .hot-feed-space h2{
