@@ -262,7 +262,7 @@ time{
 }
 
   body{
-      min-height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(180deg, #111111, #222222, #333333, #444444);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -329,9 +329,9 @@ main {
     .hot-showcase article{
       grid-template-rows: repeat(1,1fr);
     }
-    .artticle-image{
+    /* .artticle-image{
       align-self: center;
       height: 85%;
       width: 85%;
-    }
+    } */
 } 
