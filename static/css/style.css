@@ -129,18 +129,23 @@ footer{
 }
 
 .footer_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
     color: white;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
 }
 
 .footer_right .links ul{
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
     list-style: none;
 }
 
 .footer_right a{
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     text-decoration: none;
     color: white;
 }
