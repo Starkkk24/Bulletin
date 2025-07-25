@@ -186,7 +186,7 @@ footer{
     }
     .nav-wrap.scrolled .nav_right a{
         font-size: small;
-        background-color: #38362E;
+        background-color: #444444;
         padding: 0.5rem;
         border-radius: 0.5rem;
 
@@ -194,7 +194,7 @@ footer{
     .nav_right a{
         font-size: small;
         display: flex;
-        background-color: #807A5C;
+        background-color: #111111;
         padding: 0.5rem;
         border-radius: 0.5rem;
         align-items: center;
