@@ -186,7 +186,11 @@ footer{
     }
     .nav-wrap.scrolled .nav_right a{
         font-size: small;
-        background-color: #444444;
+        background-color: rgba(34, 34, 34, 0.35);
+        box-shadow:
+    inset 1px 1px 2px rgba(255, 255, 255, 0.05), /* soft top-left highlight */
+    inset -1px -1px 2px rgba(0, 0, 0, 0.5),     /* soft bottom-right shadow */
+    0 4px 10px rgba(0, 0, 0, 0.6); 
         padding: 0.5rem;
         border-radius: 0.5rem;
 
@@ -194,7 +198,7 @@ footer{
     .nav_right a{
         font-size: small;
         display: flex;
-        background-color: #111111;
+        background-color: rgba(34, 34, 34, 0.75);
         padding: 0.5rem;
         border-radius: 0.5rem;
         align-items: center;
@@ -203,7 +207,7 @@ footer{
     .nav-wrap.scrolled {
         padding: 0;
         backdrop-filter: blur(10px);
-            background: linear-gradient(45deg, #0B0F2B, #2F4B80, #6078A4, #0B0F2B);
+        background: linear-gradient(45deg, #0B0F2B, #2F4B80, #6078A4, #0B0F2B);
 
 
     }

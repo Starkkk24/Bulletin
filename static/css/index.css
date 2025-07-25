@@ -72,11 +72,13 @@ time{
 .hot-feed-space{
   /* width: 38rem; */
   padding: 1rem;
-  background-color: #222222;
-  /* border: 2px solid white; */
+  background-color: rgba(34, 34, 34, 0.35);
+  box-shadow: 0 0 10px #111111;
   border-radius: 0.5rem;
-  /* box-shadow: 0 0 10px #807A5C; */
-
+    box-shadow:
+    inset 1px 1px 2px rgba(255, 255, 255, 0.05), /* soft top-left highlight */
+    inset -1px -1px 2px rgba(0, 0, 0, 0.5),     /* soft bottom-right shadow */
+    0 4px 10px rgba(0, 0, 0, 0.6); 
 }
 
 .head-space{
@@ -105,6 +107,10 @@ time{
   border-radius: 0.5rem;
   background: linear-gradient(45deg, #38362E, #807A5C, #DCD6C1);
   transition: all 0.3s;
+    box-shadow:
+    inset 1px 1px 2px rgba(220, 214, 193, 0.05), /* soft top-left highlight */
+    inset -1px -1px 2px rgba(128, 122, 92, 0.5),     /* soft bottom-right shadow */
+    0 4px 10px rgba(56, 54, 46, 0.6); 
 }
 .day{
   transition: all 0.3s;
@@ -113,6 +119,7 @@ time{
 .day :hover{
   transition: all 0.3s;
   background: linear-gradient(45deg, #DCD6C1,#807A5C, #38362E);
+
 
 }
 
@@ -223,8 +230,12 @@ time{
 .other-section-wrap{
   padding: 1rem;
   margin: 0;
-  background-color: #222222;
+  background-color: rgba(34, 34, 34, 0.35);
   border-radius: 0.5rem;
+    box-shadow:
+    inset 1px 1px 2px rgba(255, 255, 255, 0.05), /* soft top-left highlight */
+    inset -1px -1px 2px rgba(0, 0, 0, 0.5),     /* soft bottom-right shadow */
+    0 4px 10px rgba(0, 0, 0, 0.6); 
 }
 
 .other-feed-space{
@@ -308,12 +319,24 @@ main {
   min-height: 100%;
 }
 .hot-feed-space{
-  background: linear-gradient(45deg, #38362E, #807A5C, #38362E);
+  /* background: linear-gradient(45deg, #38362E, #807A5C, #38362E); */
+  background: linear-gradient(45deg, #0B0F2B, #2F4B80, #6078A4, #0B0F2B);
+  box-shadow:
+  inset 1px 1px 2px rgba(255, 255, 255, 0.03),  /* subtle inner glow on top-left */
+  inset -2px -2px 4px rgba(11, 15, 43, 0.4),    /* deep blue shadow bottom-right */
+  0 6px 15px rgba(18, 38, 80, 0.4);             /* outer ambient blue glow */
+
+
   padding: 1rem 1rem;
   margin: 0 1rem;
 }
 .other-section-wrap{
-  background: linear-gradient(45deg, #38362E, #807A5C, #38362E);
+  background: linear-gradient(45deg, #0B0F2B, #2F4B80, #6078A4, #0B0F2B);
+  box-shadow:
+  inset 1px 1px 2px rgba(255, 255, 255, 0.03),  /* subtle inner glow on top-left */
+  inset -2px -2px 4px rgba(11, 15, 43, 0.4),    /* deep blue shadow bottom-right */
+  0 6px 15px rgba(18, 38, 80, 0.4);             /* outer ambient blue glow */
+
   padding: 1rem 1rem;
   margin: 1rem 1rem 0 1rem;
 }
