@@ -1,3 +1,6 @@
+
+
+
 body{
     /* background: linear-gradient(45deg, #111111, #111222, #222333, #222222, #333333); */
     background: linear-gradient(90deg, #111111, #222222);
@@ -246,3 +249,49 @@ time{
 }
 
 
+
+/* Creating Responsiveness */
+
+@media (max-width:991px){
+  html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+}
+
+  body{
+      min-height: 100vh;
+    background: linear-gradient(90deg, #111111, #222222, #333333, #444444);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+  }
+  .page-wrap {
+    padding-top: 17rem;
+    padding-bottom: 15rem;
+}
+.section-1-wrap{
+  flex-direction: column;
+}
+  #latest {
+    /* scroll-margin-top: 17rem; */
+  }
+.hot-feed-content{
+  flex-direction: column;
+  justify-content: center;
+}
+.hot-showcase{
+  align-self: center;
+}
+.hot-directs{
+  align-items: center;
+}
+main {
+  min-height: 100vh;
+}
+
+.page-wrap {
+  min-height: 100%;
+}
+}

@@ -20,10 +20,26 @@
 // });
 
 
-window.addEventListener('scroll', function() {
+// window.addEventListener('scroll', function() {
+//     const navbar = document.querySelector('.nav-wrap');
+    
+//     if (window.scrollY > 150) {
+//         navbar.classList.add('scrolled');
+//     } else {
+//         navbar.classList.remove('scrolled');
+//     }
+// });
+
+window.addEventListener('scroll', function () {
     const navbar = document.querySelector('.nav-wrap');
     
-    if (window.scrollY > 150) {
+    // Check screen width
+    const isMobile = window.innerWidth <= 991;
+
+    // Set scroll threshold based on screen type
+    const scrollLimit = isMobile ? 35 : 150;
+
+    if (window.scrollY > scrollLimit) {
         navbar.classList.add('scrolled');
     } else {
         navbar.classList.remove('scrolled');

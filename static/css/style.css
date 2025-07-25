@@ -82,6 +82,11 @@ main{
     padding: 1rem 1rem;
     border-bottom: 2px solid #444;    /* need a hidden search bar here  */
 }
+
+/* .nav_left img{
+    width: 7rem;
+    height: 7rem;
+} */
 .nav_left a{
     /* color: white; */
     text-decoration: none;
@@ -148,4 +153,77 @@ footer{
     font-size: 1.15rem;
     text-decoration: none;
     color: white;
+}
+
+
+
+/* Creating Responsiveness */
+
+@media (max-width:932px){
+    /* nav bar responsiveness */
+    html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+}
+
+    .nav-wrap{
+        background-color: transparent;
+    }
+    .nav_right ul{
+        margin-top: 1rem;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.15rem;
+    }
+    .nav-wrap.scrolled .nav_right ul{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 0.85rem;
+    }
+    .nav-wrap.scrolled .nav_right a{
+        background-color: #38362E;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+
+    }
+    .nav_right a{
+        display: flex;
+        background-color: #807A5C;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-wrap.scrolled {
+        padding: 0;
+    }
+    .nav-wrap.scrolled .nav_right{
+        padding: 1rem;
+    }
+
+    /* footer responsiveness */
+
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        padding: 3rem;
+    }
+    .footer_left p{
+        text-align: center;
+        font-size: 0.85rem;
+    }
+    .footer_right ul{
+        margin: 0;
+        padding: 0;
+    }
+    .footer_right li {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
 }
