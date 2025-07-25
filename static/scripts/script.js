@@ -9,12 +9,23 @@
 // });
 
 
+// window.addEventListener('scroll', function() {
+//     const navbar = document.querySelector('.nav-wrap');
+//     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+//     const maxScroll = 200; // Distance to scroll before full background
+    
+//     // Calculate opacity (0 to 0.9 as you scroll)
+//     const opacity = Math.min(0.9, scrollTop / maxScroll);
+//     navbar.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
+// });
+
+
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.nav-wrap');
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    const maxScroll = 200; // Distance to scroll before full background
     
-    // Calculate opacity (0 to 0.9 as you scroll)
-    const opacity = Math.min(0.9, scrollTop / maxScroll);
-    navbar.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
+    if (window.scrollY > 150) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
 });

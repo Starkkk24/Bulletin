@@ -10,6 +10,10 @@ body{
 }
 
 
+.section-1-wrap{
+    scroll-margin-top: 8.45rem;
+}
+
 ::-webkit-scrollbar{
     width: 10px;
 }
@@ -51,34 +55,22 @@ main{
     margin: 0;
     padding: 0.5rem 4rem;
     background-color: rgba(0, 0, 0, 0); /* Start with transparent */
-    transition: background-color 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     /* border-bottom: 2px solid #444; */
     /* background: linear-gradient(45deg, #111111, #111222, #222333, #222222, #333333); */
     /* background-color: black; */
     /* backdrop-filter: blur(10px); */
 }
 
-
-.nav-wrap{
-    top: 0;
-    left: 0;
-    right: 0;
-    /* height: 5rem; */
-    /* width: 80vw; */
-    position: fixed;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    padding: 0.5rem 4rem;
-    background-color: rgba(0, 0, 0, 0); /* Start with transparent */
-    transition: background-color 0.3s ease;
-    /* border-bottom: 2px solid #444; */
-    /* background: linear-gradient(45deg, #111111, #111222, #222333, #222222, #333333); */
-    /* background-color: black; */
-    /* backdrop-filter: blur(10px); */
+.nav-wrap.scrolled {
+    background: linear-gradient(90deg, #111111, #0e0e0e,#222222);
+    padding: 0 4rem;
+    flex-direction: row; /* Change to row when scrolled */
+    border-bottom: 2px solid #444;
+    transition: 0.3s ease;
+}
+.nav-wrap.scrolled .nav_left {
+    border-bottom: none; /* Remove border when scrolled */
 }
 
 .nav_left{
@@ -88,7 +80,7 @@ main{
     font-size: 1.3rem;
     font-weight: 600;
     padding: 1rem 1rem;
-    border-bottom: 2px solid #444;   /* need a hidden search bar here */ 
+    border-bottom: 2px solid #444;    /* need a hidden search bar here  */
 }
 .nav_left a{
     /* color: white; */
