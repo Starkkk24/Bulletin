@@ -202,6 +202,10 @@ footer{
     }
     .nav-wrap.scrolled {
         padding: 0;
+        backdrop-filter: blur(10px);
+            background: linear-gradient(45deg, #0B0F2B, #2F4B80, #6078A4, #0B0F2B);
+
+
     }
     .nav-wrap.scrolled .nav_right{
         padding: 1rem;
@@ -210,6 +214,7 @@ footer{
     /* footer responsiveness */
 
     footer{
+        background: transparent;
         flex-direction: column;
         justify-content: center;
         gap: 2rem;

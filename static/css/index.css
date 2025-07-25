@@ -3,7 +3,7 @@
 
 body{
     /* background: linear-gradient(45deg, #111111, #111222, #222333, #222222, #333333); */
-    background: linear-gradient(90deg, #111111, #222222);
+    background: linear-gradient(225deg, #111111, #333333 ,#222222, #111111);
     color: whitesmoke;
     margin: 0;
     padding: 0;
@@ -263,7 +263,8 @@ time{
 
   body{
     min-height: 100vh;
-    background: linear-gradient(180deg, #111111, #222222, #333333, #444444);
+    /* background: linear-gradient(0deg, #111111, #333333, #222222, #333333, #111111); */
+    background: linear-gradient(45deg, #0B0F2B, #2F4B80, #6078A4, #0B0F2B);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     
@@ -277,7 +278,7 @@ time{
   flex-direction: column;
 }
 .section-1{
-  margin: 0 4rem;
+  margin: 0 2rem;
 }
 
   #latest {
@@ -307,11 +308,12 @@ main {
   min-height: 100%;
 }
 .hot-feed-space{
-  
+  background: linear-gradient(45deg, #38362E, #807A5C, #38362E);
   padding: 1rem 1rem;
   margin: 0 1rem;
 }
 .other-section-wrap{
+  background: linear-gradient(45deg, #38362E, #807A5C, #38362E);
   padding: 1rem 1rem;
   margin: 1rem 1rem 0 1rem;
 }
