@@ -9,11 +9,15 @@ body{
 hr{
     width: 100%;
     border: 0;
-    height: 2px;
+    height: 1px;
     background-color: #444;
     /* background-color: white; */
 }
 
+
+time{
+  font-size: smaller;
+}
 
 
 .display {
@@ -40,7 +44,8 @@ hr{
 .space-1{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 1rem;
 
 }
 
@@ -55,13 +60,38 @@ hr{
 }
 
 .hot-feed-space{
-  width: 38rem;
+  /* width: 38rem; */
   padding: 1rem;
   background-color: #222222;
   /* border: 2px solid white; */
   border-radius: 0.5rem;
 }
 
+.head-space{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-space{
+  display: grid;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.left-space h1{
+  margin: 0;
+}
+.day{
+  padding: 0.5rem;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+}
+.day h3,p{
+  margin: 0;
+}
 
 .hot-feed-space h2{
   margin: 0 ;
@@ -70,7 +100,9 @@ hr{
 
   .hot-showcase article{
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    /* grid-template-columns: repeat(1,1fr); */
+    grid-template-columns: repeat(auto-fit, 300px);
+    padding: 1rem;
 
   }
   .artticle-image{
@@ -82,17 +114,20 @@ hr{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    justify-items: center;
+    gap: 5px;
+    padding-top: 0.5rem;
   }
     .article-update-details p{
       margin: 0;
     }
     .article-update-details hr{
-      height: 2px;
-      width: 2px ;
+      height: 4px;
+      width: 4px ;
+      border: 0;
+      margin: 0;
       border-radius: 50%;
       background-color: white;
-      
     }
   .news-head a{
     text-decoration: none;
@@ -101,25 +136,25 @@ hr{
     font-weight: 600;
   }
   .news-head{
-  padding: 0.8rem 0.5rem;
-
+  padding-top:0.5rem;
   }
 
   .domain{
+    padding-top: 0.25rem;
     display: flex;
     flex-direction: row;
-    gap: 2px;
+    gap: 5px;
     align-items: center;
   }
   .domain img{
     align-items: center;
-    height: 30px;
-    width: 30px;
+    height: 19px;
+    width: 19px;
   }
 
-  .article-update-details{
-    padding: 0 0.5rem;
-  }
+
+
+
 
 /* hot-directs */
   .hot-directs{
@@ -128,9 +163,21 @@ hr{
     grid-template-columns: repeat(1, 1fr);
     gap: 0.75rem;
   }
-  .direct-feed{
-    border: 1px solid white;
+
+    .direct-head a{
+    text-decoration: none;
+    color: white;
+    /* font-size: 1.25rem; */
+    /* font-weight: 600; */
   }
+  .direct-head{
+  padding-top:0.5rem;
+  }
+
+  .direct-feed time{
+    padding-top: 0.5rem;
+  }
+
 
 
 
@@ -142,7 +189,30 @@ hr{
 
 
 /* other-feed-space */
-.other-feed-space{
-  display: flex;
-  flex-direction: column;
+
+.other-space-1{
+  padding: 1rem;
+  margin: 0;
+  background-color: #222222;
+  border-radius: 0.5rem;
 }
+
+.other-feed-space{
+  margin: 0;
+    /* padding: 0.5rem 0.5rem; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
+.other-feed-space h2{
+  margin: 0;
+}
+
+.clubs-feed-space{
+    padding: 0.5rem 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.75rem;
+}
+
+
