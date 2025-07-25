@@ -14,11 +14,13 @@ hr{
     /* background-color: white; */
 }
 
+/* a :hover{
+  transform: translateY(-5px);
+} */
 
 time{
   font-size: smaller;
 }
-
 
 .display {
   scroll-margin-top: 15rem;
@@ -27,24 +29,23 @@ time{
 .page-wrap {
   padding-top: 15rem;
   padding-bottom: 15rem;
-}
-
-.page-wrap{
     display: flex;
     flex-direction: row;
 }
 
+/* section-1 */
 .section-1{
   margin: 0 10rem;
   display: flex;
   flex-direction: column;
 }
 
-.space-1{
+.section-1-wrap{
   display: flex;
   flex-direction: row;
   /* justify-content: space-between; */
   gap: 2rem;
+  
 
 }
 
@@ -55,7 +56,6 @@ time{
   justify-content: space-between;
   padding: 0;
   margin: 0;
-
 }
 
 .hot-feed-space{
@@ -64,6 +64,8 @@ time{
   background-color: #222222;
   /* border: 2px solid white; */
   border-radius: 0.5rem;
+  /* box-shadow: 0 0 10px #807A5C; */
+
 }
 
 .head-space{
@@ -91,6 +93,16 @@ time{
   /* border: 2px solid white; */
   border-radius: 0.5rem;
   background: linear-gradient(45deg, #38362E, #807A5C, #DCD6C1);
+  transition: all 0.3s;
+}
+.day{
+  transition: all 0.3s;
+}
+
+.day :hover{
+  transition: all 0.3s;
+  background: linear-gradient(45deg, #DCD6C1,#807A5C, #38362E);
+
 }
 
 .hot-feed-space h2{
@@ -190,7 +202,7 @@ time{
 
 /* other-feed-space */
 
-.other-space-1{
+.other-section-wrap{
   padding: 1rem;
   margin: 0;
   background-color: #222222;
@@ -204,6 +216,9 @@ time{
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
 }
+
+
+
 .other-feed-space h2{
   margin: 0;
 }
