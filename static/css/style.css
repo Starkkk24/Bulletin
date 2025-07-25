@@ -230,3 +230,11 @@ footer{
     }
 
 }
+
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+} 

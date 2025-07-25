@@ -280,6 +280,10 @@ time{
   margin: 0 4rem;
 }
 
+  #latest {
+    scroll-margin-top: 20rem;
+  }
+
 .hot-feed-content{
   flex-direction: column;
   justify-content: center;
@@ -293,12 +297,23 @@ time{
 main {
   min-height: 100vh;
 }
+.head-space{
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+
+}
 
 .page-wrap {
   min-height: 100%;
 }
 .hot-feed-space{
+  
   padding: 1rem 1rem;
+  margin: 0 1rem;
+}
+.other-section-wrap{
+  padding: 1rem 1rem;
+  margin: 1rem 1rem 0 1rem;
 }
 .day span{
   padding: 0.85rem 1.35rem;
@@ -306,3 +321,17 @@ main {
   font-weight: 200;
 }
 }
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    .hot-showcase article{
+      grid-template-rows: repeat(1,1fr);
+    }
+    .artticle-image{
+      align-self: center;
+      height: 85%;
+      width: 85%;
+    }
+} 
