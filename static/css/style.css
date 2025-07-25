@@ -15,11 +15,16 @@ body{
 }
 
 ::-webkit-scrollbar-track{
-    background-color: #444;
+    /* background-color: #444; */
+  /* background: linear-gradient(45deg, #38362E, #807A5C, #DCD6C1); */
+      background: linear-gradient(45deg, #111111, #333333 ,#222222);
+
 }
 
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(45deg, #111111, #333333 ,#222222);
+    /* background: linear-gradient(45deg, #111111, #333333 ,#222222); */
+    /* background: linear-gradient(45deg, #111111, #333333 ,#222222); */
+    background: linear-gradient(45deg,#DCD6C1,#807A5C, #38362E);
     border-radius: 0.5rem;
     box-shadow: 0 0 20px #ffffff;
 }
@@ -78,12 +83,17 @@ main{
     flex-direction: row;
     list-style: none;
     gap: 1.5rem;
+    transition: all 250ms;
 }
 .nav_right a{
+    transition: all 250ms;
     text-decoration: none;
     color: white;
     font-size: 1.1rem;
     font-weight: 600;
+}
+.nav_right a:hover{
+    color: #807A5C;
 }
 
 
