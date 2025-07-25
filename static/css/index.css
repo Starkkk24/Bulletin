@@ -7,10 +7,14 @@ body{
 }
 
 hr{
-    width: 80%;
-    height: 1px;
-    background-color: white;
+    width: 100%;
+    border: 0;
+    height: 2px;
+    background-color: #444;
+    /* background-color: white; */
 }
+
+
 
 .display {
   scroll-margin-top: 15rem;
@@ -27,14 +31,118 @@ hr{
     padding: 15rem 2rem;
 }
 
-.display{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem 2rem;
-    padding: 0rem 0.5rem;
-    gap: 0.5rem;
-    border: 2px solid whitesmoke;
-    border-radius: 0.5rem;
+.section-1{
+  margin: 0 10rem;
+  display: flex;
+  flex-direction: column;
 }
 
+.space-1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+/* hot-feed-space */
+.hot-feed-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+
+}
+
+.hot-feed-space{
+  width: 38rem;
+  padding: 1rem;
+  background-color: #222222;
+  /* border: 2px solid white; */
+  border-radius: 0.5rem;
+}
+
+
+.hot-feed-space h2{
+  margin: 0 ;
+}
+/* hot-showcase */
+
+  .hot-showcase article{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+  }
+  .artticle-image{
+    height: 180px;
+    width: 300px;
+    border-radius: 1rem;
+  }
+  .article-update-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+    .article-update-details p{
+      margin: 0;
+    }
+    .article-update-details hr{
+      height: 2px;
+      width: 2px ;
+      border-radius: 50%;
+      background-color: white;
+      
+    }
+  .news-head a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  .news-head{
+  padding: 0.8rem 0.5rem;
+
+  }
+
+  .domain{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    align-items: center;
+  }
+  .domain img{
+    align-items: center;
+    height: 30px;
+    width: 30px;
+  }
+
+  .article-update-details{
+    padding: 0 0.5rem;
+  }
+
+/* hot-directs */
+  .hot-directs{
+    padding: 0.5rem 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.75rem;
+  }
+  .direct-feed{
+    border: 1px solid white;
+  }
+
+
+
+
+
+
+
+
+
+
+/* other-feed-space */
+.other-feed-space{
+  display: flex;
+  flex-direction: column;
+}
