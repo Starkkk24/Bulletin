@@ -2,8 +2,8 @@
 
 
 body{
-    /* background: linear-gradient(45deg, #111111, #111222, #222333, #222222, #333333); */
-    background: linear-gradient(225deg, #111111, #333333 ,#222222, #111111);
+    background: linear-gradient(45deg, #333333,#111111,#111111, #111111, #333333);
+    /* background: linear-gradient(225deg, #111111, #333333 ,#222222, #111111); */
     color: whitesmoke;
     margin: 0;
     padding: 0;
