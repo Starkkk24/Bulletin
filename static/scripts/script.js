@@ -37,7 +37,7 @@ window.addEventListener('scroll', function () {
     const isMobile = window.innerWidth <= 991;
 
     // Set scroll threshold based on screen type
-    const scrollLimit = isMobile ? 35 : 150;
+    const scrollLimit = isMobile ? 75 : 150;
 
     if (window.scrollY > scrollLimit) {
         navbar.classList.add('scrolled');

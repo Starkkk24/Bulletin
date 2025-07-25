@@ -162,6 +162,7 @@ footer{
 @media (max-width:932px){
     /* nav bar responsiveness */
     html, body {
+        font-size: 85%;
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -172,7 +173,7 @@ footer{
         background-color: transparent;
     }
     .nav_right ul{
-        margin-top: 1rem;
+        margin: 1rem;
         padding: 0;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -184,12 +185,14 @@ footer{
         gap: 0.85rem;
     }
     .nav-wrap.scrolled .nav_right a{
+        font-size: small;
         background-color: #38362E;
         padding: 0.5rem;
         border-radius: 0.5rem;
 
     }
     .nav_right a{
+        font-size: small;
         display: flex;
         background-color: #807A5C;
         padding: 0.5rem;

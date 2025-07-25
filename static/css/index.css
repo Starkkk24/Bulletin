@@ -254,6 +254,7 @@ time{
 
 @media (max-width:991px){
   html, body {
+    /* font-size: 85%; */
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -262,21 +263,23 @@ time{
 
   body{
       min-height: 100vh;
-    background: linear-gradient(90deg, #111111, #222222, #333333, #444444);
+    background: linear-gradient(180deg, #111111, #222222, #333333, #444444);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     
   }
   .page-wrap {
-    padding-top: 17rem;
+
+    padding-top: 25rem;
     padding-bottom: 15rem;
 }
 .section-1-wrap{
   flex-direction: column;
 }
-  #latest {
-    /* scroll-margin-top: 17rem; */
-  }
+.section-1{
+  margin: 0 4rem;
+}
+
 .hot-feed-content{
   flex-direction: column;
   justify-content: center;
@@ -293,5 +296,13 @@ main {
 
 .page-wrap {
   min-height: 100%;
+}
+.hot-feed-space{
+  padding: 1rem 1rem;
+}
+.day span{
+  padding: 0.85rem 1.35rem;
+  font-size: medium;
+  font-weight: 200;
 }
 }
