@@ -26,14 +26,14 @@ body{
     background-color: var(--card-background);
     border-radius: 0.5rem;
     box-shadow:
-    inset 1px 1px 2px rgba(255, 255, 255, 0.05), /* soft top-left highlight */
-    inset -1px -1px 2px rgba(0, 0, 0, 0.5),     /* soft bottom-right shadow */
+    inset 1px 1px 2px rgba(255, 255, 255, 0.05),
+    inset -1px -1px 2px rgba(0, 0, 0, 0.5),     
     0 4px 10px rgba(0, 0, 0, 0.6);
-     box-shadow:
-    inset 1px 1px 2px rgba(255, 255, 255, 0.15), /* enhanced top-left white highlight */
-    inset -1px -1px 2px rgba(0, 0, 0, 0.4),     /* slightly softened bottom-right shadow */
-    0 4px 10px rgba(0, 0, 0, 0.4),              /* softened main shadow */
-    0 0 8px rgba(255, 255, 255, 0.2);           /* added subtle white outer glow */
+     /* box-shadow:
+    inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+    inset -1px -1px 2px rgba(0, 0, 0, 0.4),
+    0 4px 10px rgba(0, 0, 0, 0.4),              
+    0 0 8px rgba(255, 255, 255, 0.2); */
 
 
     display: flex;
@@ -59,11 +59,10 @@ body{
             gap: 1.5rem;
             padding: 2rem;
             border: 1.5px solid white;
-            box-shadow:
-    inset 1px 1px 2px rgba(255, 255, 255, 0.15), /* enhanced top-left white highlight */
-    inset -1px -1px 2px rgba(0, 0, 0, 0.4),     /* slightly softened bottom-right shadow */
-    0 4px 10px rgba(0, 0, 0, 0.4),              /* softened main shadow */
-    0 0 8px rgba(255, 255, 255, 0.2);           /* added subtle white outer glow */
+    box-shadow:
+    inset 1px 1px 2px rgba(255, 255, 255, 0.05),
+    inset -1px -1px 2px rgba(0, 0, 0, 0.5),     
+    0 4px 10px rgba(0, 0, 0, 0.6);
 
             border-radius: 0.5rem;
             align-items: center;
@@ -115,21 +114,20 @@ body{
 
 
 .card-shoe{
-    padding: 1rem 8.4rem;
+    padding: 1rem 2rem;
     background-color: var(--card-background);
     border-radius: 0.5rem;
     box-shadow:
     inset 1px 1px 2px rgba(255, 255, 255, 0.05), /* soft top-left highlight */
     inset -1px -1px 2px rgba(0, 0, 0, 0.5),     /* soft bottom-right shadow */
     0 4px 10px rgba(0, 0, 0, 0.6);
-    box-shadow:
-    inset 1px 1px 2px rgba(255, 255, 255, 0.15), /* enhanced top-left white highlight */
-    inset -1px -1px 2px rgba(0, 0, 0, 0.4),     /* slightly softened bottom-right shadow */
-    0 4px 10px rgba(0, 0, 0, 0.4),              /* softened main shadow */
-    0 0 8px rgba(255, 255, 255, 0.2);           /* added subtle white outer glow */
 
+        
+    display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
 }
     .card-shoe a{
         text-decoration: none;
@@ -138,3 +136,42 @@ body{
     .card-shoe a:hover{
         text-decoration: underline;
     }
+    
+
+/* Adding responsiveness */
+@media (max-width:991px){
+
+    .page-wrap{
+        margin: 0;
+        padding: 3rem 1rem;
+    }
+
+    .login-card{
+        padding: 1rem 2rem;
+    }
+            .head h2{
+                margin-bottom: 0.45rem;
+            }
+            .head p{
+                font-size: small;
+            }
+
+        .entry-fields{
+            padding: 1rem 2rem;
+        }
+            .submit-button .login{
+                margin: 0;
+            }
+            .baaki-maal a{
+                font-size: small;
+            }
+    
+    .card-shoe{
+         padding: 0.8rem 1.5rem;
+         display: inline-block; 
+    }
+        .card-shoe p{
+            font-size: small;
+            white-space: nowrap; 
+        }
+}
