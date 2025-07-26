@@ -59,10 +59,10 @@ body{
             gap: 1.5rem;
             padding: 2rem;
             border: 1.5px solid white;
-    box-shadow:
-    inset 1px 1px 2px rgba(255, 255, 255, 0.05),
-    inset -1px -1px 2px rgba(0, 0, 0, 0.5),     
-    0 4px 10px rgba(0, 0, 0, 0.6);
+            box-shadow:
+            inset 1px 1px 2px rgba(255, 255, 255, 0.05),
+            inset -1px -1px 2px rgba(0, 0, 0, 0.5),     
+            0 4px 10px rgba(0, 0, 0, 0.6);
 
             border-radius: 0.5rem;
             align-items: center;
@@ -78,12 +78,10 @@ body{
                             border: 1px solid white;
                             color: white;
                             box-shadow:
-    inset 1px 1px 2px rgba(255, 255, 255, 0.15), /* enhanced top-left white highlight */
-    inset -1px -1px 2px rgba(0, 0, 0, 0.4),     /* slightly softened bottom-right shadow */
-    0 4px 10px rgba(0, 0, 0, 0.4),              /* softened main shadow */
-    0 0 8px rgba(255, 255, 255, 0.2);           /* added subtle white outer glow */
-
-
+                            inset 1px 1px 2px rgba(255, 255, 255, 0.15), 
+                            inset -1px -1px 2px rgba(0, 0, 0, 0.4),      
+                            0 4px 10px rgba(0, 0, 0, 0.4), 
+                            0 0 8px rgba(255, 255, 255, 0.2);
                             border-radius: 0.35rem;
                         }
                 .submit-button .login{
@@ -91,11 +89,11 @@ body{
                     padding: 0.75rem 4rem;
                     border: none;
                     border-radius: 0.5rem;
-                                box-shadow:
-    inset 1px 1px 2px rgba(255, 255, 255, 0.15), /* enhanced top-left white highlight */
-    inset -1px -1px 2px rgba(0, 0, 0, 0.4),     /* slightly softened bottom-right shadow */
-    0 4px 10px rgba(0, 0, 0, 0.4),              /* softened main shadow */
-    0 0 8px rgba(255, 255, 255, 0.2); 
+                    box-shadow:
+                    inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+                    inset -1px -1px 2px rgba(0, 0, 0, 0.4),
+                    0 4px 10px rgba(0, 0, 0, 0.4),
+                    0 0 8px rgba(255, 255, 255, 0.2); 
                 }
                 .submit-button .login:hover{
                     color: white;
