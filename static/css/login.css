@@ -164,6 +164,7 @@ body{
             }
             .baaki-maal a{
                 font-size: small;
+                text-decoration: underline;
             }
     
     .card-shoe{
@@ -173,5 +174,8 @@ body{
         .card-shoe p{
             font-size: small;
             white-space: nowrap; 
+        }
+        .card-shoe a{
+            text-decoration: underline;
         }
 }
