@@ -1,11 +1,29 @@
 :root{
-    --card-background: rgba(34, 34, 34, 0.35);
+
+
+    /* set-1 */
+    /* --card-background: rgba(34, 34, 34, 0.2);
+    --body-background: linear-gradient(45deg, #333333,#111111,#111111, #111111, #333333);;
+    --input_background: rgba(255, 255, 255, 0.05); 
+    --button_background: rgba(255, 255, 255, 1);
+    --button_background_hover: rgba(94, 92, 92);
+    --button_text: black; */
+
+
+    /* set-2 */
+    --card-background: rgba(34, 34, 34, 0.2);
+    --body-background: linear-gradient(135deg, #928DAB, #7323C0);
+    --input_background: rgba(26,26,26,0.3);
+    --button_background: rgba(115, 35, 192, 0.6);
+    --button_background_hover: rgba(146, 141, 171, 0.3);
+    --button_text: white;
+
 }
 
 body{
     min-height: 100vh;
     /* min-width: 100vw; */
-    background: linear-gradient(45deg, #333333,#111111,#111111, #111111, #333333);
+    background: var(--body-background);
     color: whitesmoke;
     margin: 0;
     padding: 0;
@@ -94,7 +112,7 @@ body{
                         }
                         .entry-field .input-field{
                             padding: 0.75rem;
-                            background-color: rgba(255, 255, 255, 0.05);
+                            background-color: var(--input_background);
                             border: 1px solid white;
                             border-right: none;
                             border-left: none;
@@ -111,6 +129,8 @@ body{
                     padding: 0.75rem 4rem;
                     border: none;
                     border-radius: 0.5rem;
+                    background-color: var(--button_background);
+                    color: var(--button_text);
                     box-shadow:
                     inset 1px 1px 2px rgba(255, 255, 255, 0.15),
                     inset -1px -1px 2px rgba(0, 0, 0, 0.4),
@@ -119,7 +139,7 @@ body{
                 }
                 .submit-button .signup:hover{
                     color: white;
-                    background-color: rgb(94, 92, 92);
+                    background-color: var(--button_background_hover);
                 }
                 
 
