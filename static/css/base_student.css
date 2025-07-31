@@ -30,7 +30,7 @@ body{
 
 }
 
-.nav_links ul{ display: flex;  flex-direction: column;    list-style: none;    gap:0;}
+.nav_links ul{ display: flex;  flex-direction: column;    list-style: none;    gap:0; padding-left: 0;}
 .nav_links ul li{ padding: 1.45rem 1.25rem ;                     box-shadow:
                     inset 1px 1px 2px rgba(255, 255, 255, 0.15),
                     inset -1px -1px 2px rgba(0, 0, 0, 0.4),
@@ -69,12 +69,15 @@ body{
 .section_wrap{
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 5.6rem;
     /* margin: 0 10rem; */
 }
 
 
 .content_space{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
     margin-top: 2rem;
     color: white;
 }
@@ -82,5 +85,13 @@ body{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+}
 
+.feed_roll_space{
+    padding: 0 2rem;
+    padding-right: 4.6rem;
+}
+
+.widget_space{
+    /* align-self: end; */
 }
