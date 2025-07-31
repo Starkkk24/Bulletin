@@ -17,7 +17,7 @@ body{
     /* padding: 2rem 1rem; */
 }
 .nav_up{
-    /* position: inherit; */
+    /* position: fixed; */
     font-family: "Roboto Flex", sans-serif;
     height: 91.3vh;
     display: flex;
@@ -30,9 +30,29 @@ body{
 
 }
 
-.nav_links ul{ display: flex;  flex-direction: column;    list-style: none;    gap:1.5rem;}
+.nav_links ul{ display: flex;  flex-direction: column;    list-style: none;    gap:0;}
+.nav_links ul li{ padding: 1.45rem 1.25rem ;                     box-shadow:
+                    inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+                    inset -1px -1px 2px rgba(0, 0, 0, 0.4),
+                    0 4px 10px rgba(0, 0, 0, 0.4),
+                    0 0 8px rgba(255, 255, 255, 0.2);}
 .nav_links a{    text-decoration: none;    color: white;  }
-.nav_down a{  text-decoration: none;    color: white;  }
+.nav_down a{  text-decoration: none;    color: white; padding: 1.45rem 1.25rem ;  }
+.nav_down {display: flex;box-shadow:
+                    inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+                    inset -1px -1px 2px rgba(0, 0, 0, 0.4),
+                    0 4px 10px rgba(0, 0, 0, 0.4),
+                    0 0 8px rgba(255, 255, 255, 0.2);}
+.nav_down :hover{background-color: #111112;}
+.nav_links ul li:hover{
+    background-color: #111112;
+                        /* box-shadow:
+                    inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+                    inset -1px -1px 2px rgba(0, 0, 0, 0.4),
+                    0 4px 10px rgba(0, 0, 0, 0.4),
+                    0 0 8px rgba(255, 255, 255, 0.2); */
+    cursor: pointer;
+}
 .nav_logo{
     display: flex;
     justify-content: center;
@@ -50,7 +70,7 @@ body{
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    margin: 0 10rem;
+    /* margin: 0 10rem; */
 }
 
 
