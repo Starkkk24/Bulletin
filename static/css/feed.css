@@ -1,10 +1,26 @@
+.post_profile_logo{
+    display: flex;
+    justify-content: center;
+    /* padding: 0 1rem; */
+}
+.post_profile_logo a{
+    text-decoration: none;
+    display: flex;
+    width: 40px;
+    height:40px;
+    margin-bottom: 1rem;
+}
+.post_profile_logo img{
+        border-radius: 50%;
+}
+
 .feed_page_wrap{
     display: flex;
     flex-direction: column;
 }
 
 .Post_space{
-    margin: 0.25rem;
+    margin: 0;
 }
 
 .Post_area_wrap{
@@ -25,24 +41,57 @@
 }
 
 
-    .Post_area_wrap_right input{
+    .Post_area_wrap_right textarea{
         border: none;
-        background-color: #222222;
-        width: 450px;
-        height: 100px;
+        background: rgba(1,1,0,255);
+        width: 700px;
+        /* height: 100px; */
+        padding: 10px;
+        color: white;
+        vertical-align: top;
+        text-align: left;
+        box-sizing: border-box;
+        outline: none;
+        font-size: 1.2rem;
+        /* height: 200px; */
+        border-bottom:1px solid #666666 ;
+    }
+    .Post_area_wrap_right textarea::-webkit-scrollbar{
+        width: 10px;
+    }
+    .Post_area_wrap_right textarea::-webkit-scrollbar-track{
+      background: linear-gradient(45deg, #111111, #333333 ,#222222);
+    }
+    .Post_area_wrap_right textarea::-webkit-scrollbar-thumb{
+    background: linear-gradient(45deg,#111111,#222222, #38362E);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 20px #ffffff;
     }
 
 
-/* 
+
+
     .feed_roll_space{
-        height: 100vh;
-    } */
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 0.5rem;
+    }
 
 
 .feed_post{
     border:1px solid #666666;
     border-radius: 0.5rem;
-    margin: 1rem;
+    margin: 1rem 1.8rem;
     padding: 1rem 1rem;
 
+}
+
+
+
+.Post-bar-wrap{
+    margin-top: 0.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
