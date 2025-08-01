@@ -95,3 +95,41 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+
+.Post-bar-wrap_left{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.Post-items a{
+    text-decoration: none;
+    /* font-size: large; */
+        font-size: 1.5rem;
+
+    /* color: white; */
+    color: #807A5C;
+}
+
+.Post-items a:hover{
+    transition: 290ms;
+    color: white;
+}
+
+.Post-bar-wrap_right button{
+    background-color: #807A5C;
+    border: none;
+    padding: 0.55rem 1.5rem;
+    border-radius: 1rem;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.Post-bar-wrap_right button:hover{
+    transition: 290ms;
+    background-color: white;
+    cursor: pointer;
+}
