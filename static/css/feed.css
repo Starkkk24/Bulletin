@@ -1,0 +1,48 @@
+.feed_page_wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.Post_space{
+    margin: 0.25rem;
+}
+
+.Post_area_wrap{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-bottom:1px solid #666666;
+
+}
+
+
+
+
+.Post_area_wrap_right{
+    display: flex;
+    flex-direction: column;
+}
+
+
+    .Post_area_wrap_right input{
+        border: none;
+        background-color: #222222;
+        width: 450px;
+        height: 100px;
+    }
+
+
+/* 
+    .feed_roll_space{
+        height: 100vh;
+    } */
+
+
+.feed_post{
+    border:1px solid #666666;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 1rem 1rem;
+
+}
