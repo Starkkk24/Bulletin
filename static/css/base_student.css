@@ -79,14 +79,81 @@ header {
 .nav_links ul{ display: flex;  flex-direction: column;    list-style: none;    gap:0; padding-left: 0; margin: 0;}
 .nav_links ul li{ padding: 1.45rem 1.25rem ;         }
 .nav_links a{    text-decoration: none;    color: white;  }
+
+
+
+/* 
+
 .nav_down a{  text-decoration: none;    color: white; padding: 1.45rem 1.25rem ; width: 100%; display: block; box-sizing: border-box;    border-radius: 1.5rem;
       }
-.nav_down {display: flex; width: 100%;}
-.nav_down :hover{background-color: #111112;box-shadow:
-                    inset 1px 1px 2px rgba(255, 255, 255, 0.15),
-                    inset -1px -1px 2px rgba(0, 0, 0, 0.4),
-                    0 4px 10px rgba(0, 0, 0, 0.4),
-                    0 0 8px rgba(255, 255, 255, 0.2);}
+      .nav_down :hover{background-color: #111112;box-shadow:
+      inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+      inset -1px -1px 2px rgba(0, 0, 0, 0.4),
+      0 4px 10px rgba(0, 0, 0, 0.4),
+      0 0 8px rgba(255, 255, 255, 0.2);} */
+      
+      /* .nav_down {display: flex; width: 100%;} */
+      
+.Profile-link{
+    text-decoration: none;
+}
+
+.profile_btn_wrap{
+    display: flex;
+    flex-direction: row; 
+    gap: 0.5rem;
+    color: white; 
+    padding: 1rem 1rem 1rem 0.8rem ; 
+    width: 100%; 
+    box-sizing: border-box;    
+    border-radius: 1.5rem;
+    /* padding: 0 0.2rem; */
+}
+
+
+.profile_btn_wrap:hover{
+    transition: 190ms;
+    background-color: #111112;
+    box-shadow:
+      inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+      inset -1px -1px 2px rgba(0, 0, 0, 0.4),
+      0 4px 10px rgba(0, 0, 0, 0.4),
+      0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+      
+.profile_btn_right{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: small;
+    justify-content: center;
+}
+.profile_btn_right span{
+    font-weight: 600;
+}
+.profile_btn_right p{
+    margin: 0;
+    color: #666666;
+}
+
+
+
+
+
+
+
+
+.post_profile_logo img{
+        text-decoration: none;
+    width: 40px;
+    height:40px;
+        border-radius: 50%;
+}
+
+
+
+
 .nav_links ul li:hover{
     background-color: #111112;
                         box-shadow:
