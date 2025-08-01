@@ -1,3 +1,20 @@
+:root{
+/* SET-1 */
+    --background: rgba(1,1,0,255);
+    --sec_background: #111112;
+    --scrollbar-track_background: linear-gradient(45deg, #111111, #333333 ,#222222);
+    --scrollbar-thumb_background: linear-gradient(45deg,#DCD6C1,#807A5C, #38362E);
+    --border: 1px solid #666666;
+    --sec_text: #807A5C;
+    --tert_text: #666666;
+    --box-shadow_:
+      inset 1px 1px 2px rgba(255, 255, 255, 0.15),
+      inset -1px -1px 2px rgba(0, 0, 0, 0.4),
+      0 4px 10px rgba(0, 0, 0, 0.4),
+      0 0 8px rgba(255, 255, 255, 0.2);
+      
+}
+
 
 .content_space{
     display: flex;
@@ -10,7 +27,6 @@
 .post_profile_logo{
     display: flex;
     justify-content: center;
-    /* padding: 0 1rem; */
 }
 .post_profile_logo a{
     text-decoration: none;
@@ -20,13 +36,13 @@
     margin-bottom: 1rem;
 }
 .post_profile_logo img{
-        border-radius: 50%;
+    border-radius: 50%;
 }
 
 .feed_page_wrap{
     display: flex;
     flex-direction: column;
-    border-right: 1px solid #666666;
+    border-right: var(--border);
     min-height: 100vh;
     overflow-y: auto;
 }
@@ -40,7 +56,7 @@
     flex-direction: row;
     gap: 0.5rem;
     padding: 1rem;
-    border-bottom:1px solid #666666;
+    border-bottom: var(--border);
 
 }
 
@@ -55,7 +71,7 @@
 
     .Post_area_wrap_right textarea{
         border: none;
-        background: rgba(1,1,0,255);
+        background: var(--background);
         width: 700px;
         /* height: 100px; */
         padding: 10px;
@@ -66,18 +82,18 @@
         outline: none;
         font-size: 1.2rem;
         /* height: 200px; */
-        border-bottom:1px solid #666666 ;
+        border-bottom: var(--border);
     }
     .Post_area_wrap_right textarea::-webkit-scrollbar{
         width: 10px;
     }
     .Post_area_wrap_right textarea::-webkit-scrollbar-track{
-      background: linear-gradient(45deg, #111111, #333333 ,#222222);
+      background: var(--scrollbar-track_background);
     }
     .Post_area_wrap_right textarea::-webkit-scrollbar-thumb{
     background: linear-gradient(45deg,#111111,#222222, #38362E);
     border-radius: 0.5rem;
-    box-shadow: 0 0 20px #ffffff;
+    box-shadow: 0 0 20px white;
     }
 
 
@@ -94,7 +110,7 @@
 .feed_post{
     display: flex;
     flex-direction: row;
-    border:1px solid #666666;
+    border: var(--border);
     border-radius: 0.5rem;
     margin: 1rem 1.8rem;
     padding: 1rem 1rem;
@@ -123,7 +139,7 @@
         font-size: 1.5rem;
 
     /* color: white; */
-    color: #807A5C;
+    color: var(--sec_text);
 }
 
 .Post-items a:hover{
@@ -132,7 +148,7 @@
 }
 
 .Post-bar-wrap_right button{
-    background-color: #807A5C;
+    background-color: var(--sec_text);
     border: none;
     padding: 0.55rem 1.5rem;
     border-radius: 1rem;
@@ -154,7 +170,7 @@
 
     article a{
         text-decoration: none;
-        color: #ffffff;
+        color: white;
     }
 
 
@@ -167,7 +183,7 @@
     padding: 0 1rem;
     gap: 0.5rem;
     padding-bottom: 1rem;
-    border-bottom:1px solid #666666 ;
+    border-bottom: var(--border) ;
 
 
   }
@@ -194,7 +210,7 @@
       border: 0;
       margin: 0;
       border-radius: 50%;
-      background-color: #666666;
+      background-color: var(--tert_text);
     }
 
       .news-head a{
@@ -207,10 +223,6 @@
   .news-head a:hover{
     text-decoration: underline;
   }
-  /* .news-head{
-  padding-top:0.5rem;
-  } */
-
   
   .domain{
     padding-top: 0.25rem;
@@ -249,7 +261,7 @@ time{
 }
 .uploader p{
     margin: 0;
-    color: #666666;
+    color: var(--tert_text);
 }
 
 .post_interaction_bar{
@@ -276,7 +288,8 @@ time{
 }
 
 .widget-card {
-    border: 1px solid #2f3336;
+    /* border: 1px solid #2f3336; */
+    border: var(--border);
     border-radius: 16px;
     padding: 1rem;
 }
@@ -284,7 +297,8 @@ time{
 .search-box {
     display: flex;
     align-items: center;
-    border: 1px solid #2f3336;
+    /* border: 1px solid #2f3336; */
+    border: var(--border);
     border-radius: 50px;
     padding: 12px 16px;
     margin-bottom: 1rem;
@@ -292,6 +306,7 @@ time{
 }
 
 .search-box i {
+    /* color: #71767b; */
     color: #71767b;
     margin-right: 12px;
 }
@@ -315,7 +330,7 @@ time{
     margin-bottom: 1rem;
 }
 
-.premium-text {
+/* .premium-text {
     color: #71767b;
     font-size: 15px;
     margin-bottom: 1rem;
@@ -323,7 +338,7 @@ time{
 }
 
 .subscribe-btn {
-    background: #807A5C;
+    background: var(--sec_text);
     color: white;
     border: none;
     border-radius: 50px;
@@ -368,7 +383,7 @@ time{
 .trending-posts {
     color: #71767b;
     font-size: 13px;
-}
+} */
 
 .follow-item {
     display: flex;
@@ -403,7 +418,7 @@ time{
 }
 
 .follow-btn {
-    background: #807A5C;
+    background: var(--sec_text);
     color: black;
     border: none;
     border-radius: 50px;
@@ -418,7 +433,7 @@ time{
 }
 
 .show-more {
-    color: #807A5C;
+    color: var(--sec_text);
     text-decoration: none;
     font-size: 15px;
     padding: 16px 0 4px 0;
