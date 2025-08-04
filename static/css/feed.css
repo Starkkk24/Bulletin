@@ -35,7 +35,8 @@
       0 0 8px rgba(255, 255, 255, 0.2); */
 
       /* SET-3 */
-    /* --background: #E6E6FA;
+    /* --background: #E6E6FA; */
+    --background: rgba(254,255,254,255);
     --sec_background: #111112;
     --scrollbar-track_background: linear-gradient(45deg, #111111, #333333 ,#222222);
     --scrollbar-thumb_background: linear-gradient(45deg,#DCD6C1,#807A5C, #38362E);
@@ -50,10 +51,10 @@
       inset 1px 1px 2px rgba(255, 255, 255, 0.15),
       inset -1px -1px 2px rgba(0, 0, 0, 0.4),
       0 4px 10px rgba(0, 0, 0, 0.4),
-      0 0 8px rgba(255, 255, 255, 0.2); */
+      0 0 8px rgba(255, 255, 255, 0.2);
 
       /* SET-4 */
-    --background: #F5F5DC;
+    /* --background: #F5F5DC;
     --btn_hover: rgb(87, 164, 223);
     --btn_text: black;
     --btn_text_2: white;
@@ -68,7 +69,7 @@
       inset 1px 1px 2px rgba(255, 255, 255, 0.15),
       inset -1px -1px 2px rgba(0, 0, 0, 0.4),
       0 4px 10px rgba(0, 0, 0, 0.4),
-      0 0 8px rgba(255, 255, 255, 0.2);
+      0 0 8px rgba(255, 255, 255, 0.2); */
       
 
       /* SET-5 */
