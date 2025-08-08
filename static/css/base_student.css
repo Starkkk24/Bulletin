@@ -131,6 +131,9 @@ header {
     color: white;
     border-radius: 1.5rem;
     }
+    .nav_links ul li:hover > a {
+    color: white;
+}
 
     .nav_logo{
         display: flex;
@@ -165,7 +168,13 @@ header {
     background-color: var(--sec_background);
     box-shadow: var(--box-shadow_);
     color: white;
-}     
+}
+.profile_btn_wrap:hover span {
+    color: white;
+}
+.profile_btn_wrap:hover p {
+    color: #888888;
+}
     .profile_btn_right{
         display: flex;
         flex-direction: column;
