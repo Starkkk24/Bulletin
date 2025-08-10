@@ -1,10 +1,46 @@
-{% extends "base_student.html" %}
-{% block head %} <link rel="stylesheet" href="../static/css/profile.css"> {% endblock %}
-{% block title %} Profile Page {% endblock %}
-
-{% block content  %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/base_student.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+     <link rel="stylesheet" href="../static/css/profile.css">
+    <title>Profile Page</title>
+</head>
+<body>
+                    <nav class="profile_nav" >
+                        <ul>
+                            <a href="/feed"><li>SS</li></a>
+                            <a href="/"><li>JB</li></a>
+                        </ul>                
+                </nav>
 <div class="page_wrap">
-    <p> Here will be the profile page</p>
-</div>
+    
+    <div class="profile_left">
+        <!-- <div class="profile_up_ribbon"> </div> -->
+        <div class="profile_left_content">
+            <div class="profile_left_PP"><img src="../static/img/stark.png"></div>
+            <div class="profile_left_name">
+                <span>Stark</span>
+                <p>@starkkk24</p>
+            </div>
+            <div class="profile_left_bio">Smthing about the Profile owner !</div>
+            <div class="profile_left_links">
+                <a><i class="fab fa-instagram"></i></a>
+                <a><i class="fab fa-linkedin"></i></a>
+                <a><i class="fab fa-github"></i></a>
+                <a><i class="fab fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="profile_right">
+        <div class="profile_board"><p>here is the profile board</p></div>
+        <div class="profile_content_wrap">
+            <p>here is the content wrap</p>
+        </div>
 
-{% endblock %}
+    </div>
+</div>
+</body>

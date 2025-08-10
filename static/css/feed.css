@@ -1,6 +1,6 @@
 :root{
 /* SET-1 */
-    --background: rgba(1,1,0,255);
+    /* --background: rgba(1,1,0,255);
     --sec_background: #111112;
     --scrollbar-track_background: linear-gradient(45deg, #111111, #333333 ,#222222);
     --scrollbar-thumb_background: linear-gradient(45deg,#DCD6C1,#807A5C, #38362E);
@@ -14,7 +14,7 @@
       inset 1px 1px 2px rgba(255, 255, 255, 0.15),
       inset -1px -1px 2px rgba(0, 0, 0, 0.4),
       0 4px 10px rgba(0, 0, 0, 0.4),
-      0 0 8px rgba(255, 255, 255, 0.2);
+      0 0 8px rgba(255, 255, 255, 0.2); */
       
       /* SET-2 */
     /* --background: #f0f1f2;
@@ -36,7 +36,7 @@
 
       /* SET-3 */
     /* --background: #E6E6FA; */
-    /* --background: rgba(254,255,254,255);
+    --background: rgba(254,255,254,255);
     --sec_background: #111112;
     --scrollbar-track_background: linear-gradient(45deg, #111111, #333333 ,#222222);
     --scrollbar-thumb_background: linear-gradient(45deg,#DCD6C1,#807A5C, #38362E);
@@ -51,7 +51,7 @@
       inset 1px 1px 2px rgba(255, 255, 255, 0.15),
       inset -1px -1px 2px rgba(0, 0, 0, 0.4),
       0 4px 10px rgba(0, 0, 0, 0.4),
-      0 0 8px rgba(255, 255, 255, 0.2); */
+      0 0 8px rgba(255, 255, 255, 0.2);
 
       /* SET-4 */
     /* --background: #F5F5DC;
