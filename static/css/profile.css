@@ -20,7 +20,7 @@
     --background: rgba(254,255,254,255);
     --sec_background: #111112;
     --scrollbar-track_background: linear-gradient(45deg, #111111, #333333 ,#222222);
-    --scrollbar-thumb_background: linear-gradient(45deg,#DCD6C1,#807A5C, #38362E);
+    --scrollbar-thumb_background: linear-gradient(45deg,#E2725B, #38362E);
     --border: 1px solid #666666;
     --sec_text: #444444;
     --tert_text: #666666;
@@ -35,17 +35,16 @@
       0 0 8px rgba(255, 255, 255, 0.2);
     }
 
-body{
-    padding: 1rem 3rem;
-}
+
 
 .page_wrap{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:flex-start;
     gap: 2rem;
-    margin: 0.5rem;
-    color: black;
+    padding-top: 1.5rem;
+    margin-left: 150px;
+    color: white;
 }
 .profile{
     display: flex;
@@ -55,6 +54,7 @@ body{
 .profile_left{
     display: flex;
     flex-direction: column;
+    color: white;
 }
 .profile_left_links{
     display: flex;
@@ -83,9 +83,10 @@ body{
     color: var(--tert_text);
 }
 .profile_left_PP img{
-    width: 160px;
-    height: 160px;
+    width: 195px;
+    height: 195px;
     border-radius: 50%;
+    border: 3px solid #E2725B;
 }
 
 .profile_nav ul{
@@ -117,10 +118,11 @@ body{
 .profile_board{
     padding: 1rem 0.75rem;
     height: 200px;
-    width: 1000px;
-    background-color:lavender;
+    width: 700px;
+    background-color:#E2725B;
+    /* background-color:lavender; */
     border-bottom: var(--border );
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-right: none;
     border-left: none;
     color: var(--text);

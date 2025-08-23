@@ -3,7 +3,7 @@
     --bbackground: #1A1A1A;
     --sec_background: #111112;
     --scrollbar-track_background: linear-gradient(45deg, #111111, #333333 ,#222222);
-    --scrollbar-thumb_background: linear-gradient(45deg,#DCD6C1,#E2725B, #38362E);
+    --scrollbar-thumb_background: linear-gradient(45deg,#E2725B, #38362E);
     /* --scrollbar-thumb_background: linear-gradient(45deg,#DCD6C1,#807A5C, #38362E); */
     --border: 1px solid #666666;
     --text: white;
@@ -30,6 +30,7 @@ body{
     background: linear-gradient(45deg, #333333,#111111,#111111, #111111, #333333);
     /* background: linear-gradient(225deg, #111111, #333333 ,#222222, #111111); */
     color: whitesmoke;
+    height: 100vh;
     margin: 0;
     padding: 0;
 }
