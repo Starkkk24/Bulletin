@@ -1,8 +1,10 @@
 :root{
-    --background: rgba(1,1,0,255);
+    /* --bbackground: #444444; */
+    --bbackground: #1A1A1A;
     --sec_background: #111112;
     --scrollbar-track_background: linear-gradient(45deg, #111111, #333333 ,#222222);
-    --scrollbar-thumb_background: linear-gradient(45deg,#DCD6C1,#807A5C, #38362E);
+    --scrollbar-thumb_background: linear-gradient(45deg,#DCD6C1,#E2725B, #38362E);
+    /* --scrollbar-thumb_background: linear-gradient(45deg,#DCD6C1,#807A5C, #38362E); */
     --border: 1px solid #666666;
     --text: white;
     --sec_text: #807A5C;
@@ -15,14 +17,23 @@
 }
 
 
-body{
+/* body{
     background: var(--background);
-    /* background: linear-gradient(45deg, #333333,#111111,#111111, #111111, #333333); */
     font-family: "Merienda", cursive;
     height: 100%;
     margin: 0;
     padding: 0;
+} */
+
+
+body{
+    background: linear-gradient(45deg, #333333,#111111,#111111, #111111, #333333);
+    /* background: linear-gradient(225deg, #111111, #333333 ,#222222, #111111); */
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
 }
+
 
 .section_wrap{
     display: flex;
@@ -78,6 +89,7 @@ header {
 
 /* upper navigation */
 .nav_up{
+    background-color: var(--bbackground);
     position: fixed;
     top: 0;
     left: 0;
@@ -92,7 +104,7 @@ header {
     padding: 2rem 0;
     margin: 0;
     border-right: var(--border);
-    background: transparent;
+    /* background: transparent; */
     box-sizing: border-box;
 }
     .nav_links ul{ 
@@ -108,7 +120,8 @@ header {
     }
     .nav_links a{    
         text-decoration: none;    
-        color: var(--text);
+        /* color: var(--text); */
+        color: white;
     }
     .nav_links ul li:hover{
     background-color: #111112;
@@ -164,7 +177,8 @@ header {
     .profile_btn_right{
         display: flex;
         flex-direction: column;
-        color: var(--text);
+        /* color: var(--text); */
+        color: white;
         font-size: small;
         justify-content: center;
     }
